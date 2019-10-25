@@ -12,13 +12,22 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1SgYpfERWot7K3EfWphk2rt7rH9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/booktest" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates/booktest" />
+      <recent name="$PROJECT_DIR$/booktest" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -67,7 +76,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1571986889137</updated>
-      <workItem from="1571986895625" duration="524000" />
+      <workItem from="1571986895625" duration="4412000" />
+      <workItem from="1572000940388" duration="7345000" />
     </task>
     <servers />
   </component>

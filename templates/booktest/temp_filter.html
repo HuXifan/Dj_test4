@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load filters %}
+{# 加载自定义过滤器#}
+<head>
+    <meta charset="UTF-8">
+    <title>模板标签</title>
+    <style>
+        .red {
+            background-color: red;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+
+        .green {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    {% for book in books %}
+        {#        {% if book.id <= 3 %}#}
+{#        {% if  book.id|mod %}#}
+        {% if  book.id|mod_val:3 %}
+            <li class="red">{{ book.btitle }}-{{ book.id }}--{{ book.bpub_date | date:'Y年-m月-d日' }}</li>
+        {% else %}
+            <li class="green">{{ book.btitle }}--{{ book.id }}--{{ book.bpub_date }}</li>
+
+        {% endif %}
+    {% endfor %}
+</ul>
+default 过滤器： <br>
+{{ content|default:' this is a default过滤器' }}
+<!-- html的注释，网页源文件是能够看到的,{% comment %}这里面是看不到的{% endcomment %}-->
+{% comment %}
+这里面全部都是模板注释内容，相当于Python的三引号，但是在网页源文件是看不到的这部分注释北荣
+{% endcomment %}
+</body>
+</html>
