@@ -1,4 +1,4 @@
-# 自定义过滤器 >> 过滤器的本质是Python的函数
+# 父文件夹的名称是固定的就是 templatetags 自定义过滤器 >> 过滤器的本质是Python的函数
 from django.template import Library
 
 # 创建Library的实例对象
