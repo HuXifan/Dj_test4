@@ -10,5 +10,6 @@ urlpatterns = [
     url(r'^temp_filter$', views.temp_filter),  # 模板过滤器
 
     url(r'^temp_inhertit$', views.temp_inhertit),  # 模板继承
+    url(r'^html_escape$', views.html_escape),  # 模板继承
 
 ]
