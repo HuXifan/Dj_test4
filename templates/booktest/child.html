@@ -1,0 +1,15 @@
+{% extends 'booktest/base.html' %}
+{# 继承父模板内容 路径相对于templates的base.html #}
+
+{% block title %}
+    child 子模板标题
+{% endblock title %}
+{% block b1 %}
+    {{ block.super }}
+    {# 使用block.super 加载父模板所有内容#}
+    <h2> 这句话是重写内容，父模板没有而子模板有,上面的话可以删掉</h2>
+{% endblock b1 %}
+{% block b2 %}
+    {{ block.super }}
+    <h2>这是子模板 重写 b2内容</h2>
+{% endblock b2 %}

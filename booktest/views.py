@@ -59,3 +59,8 @@ def temp_filter(request):
     books = BookInfo.objects.all()
     # 传给页面去展示
     return render(request, 'booktest/temp_filter.html', {'books': books})
+
+
+def temp_inhertit(request):
+    ''''''
+    return render(request, 'booktest/child.html')

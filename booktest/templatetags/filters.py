@@ -6,13 +6,13 @@ register = Library()
 
 
 # 使用register的filter方法装饰mod，是成为过滤器
-@register.filter()
+@register.filter
 def mod(num):
     # 判断num是否为偶数
     return num % 2 == 0
 
 
-@register.filter()
+@register.filter
 def mod_val(num, val):
     '''判断num能否被val整除'''
     return num % val == 0

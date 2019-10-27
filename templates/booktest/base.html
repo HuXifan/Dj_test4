@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}
+        父模板文件
+    {% endblock title %}</title>
+</head>
+<body>
+在父模板里可以定义块，使用标签：
+
+块中间可以写内容，也可以不写
+
+子模板去继承父模板之后，可以重写父模板中的某一块的内容。
+
+重写的内容
+<h1>导航条</h1>
+{% block b1 %}
+    <h2>这是父模板 b1内容</h2>
+{% endblock b1 %}
+{% block b2 %}
+    <h2>这是父模板 b2内容</h2>
+{% endblock b2 %}
+<h1>版权信息</h1>
+</body>
+</html>
