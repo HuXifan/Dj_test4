@@ -8,10 +8,12 @@
 {#POST:提交参数在请求头中、数据安全性高的时候使用：用户名密码#}
 {#GET: 提交参数在url中、#}
 <form method="post" action="/login_check">
+    {% csrf_token %}
+    {#    #}
     用户名： <input type="text" name="username" value="{{ username }}"><br>
     密码：<input type="password" name="password"><br>
     <input type="checkbox" name="remember">记住用户名 <br>
-
+    <img src="/verify_code"> <input type="text" name="vcode"> <br>
     <input type="submit" value="LOGIN">
 </form>
 </body>

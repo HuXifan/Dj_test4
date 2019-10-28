@@ -16,5 +16,6 @@ urlpatterns = [
     url(r'^change_pwd$', views.change_pwd),  # 修改密码页面 显示
     # login_required(change_pwd)  先调用login_reqiured
     url(r'^change_pwd_action$', views.change_pwd_action),  # 修改密码处理
+    url(r'^verify_code$', views.verify_code)  # 产生验证码图片
 
 ]
