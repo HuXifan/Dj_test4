@@ -11,5 +11,10 @@ urlpatterns = [
 
     url(r'^temp_inhertit$', views.temp_inhertit),  # 模板继承
     url(r'^html_escape$', views.html_escape),  # 模板继承
+    url(r'^login$', views.login),  # 显示登录页面
+    url(r'^login_check$', views.login_check),  # 登录校验
+    url(r'^change_pwd$', views.change_pwd),  # 修改密码页面 显示
+    # login_required(change_pwd)  先调用login_reqiured
+    url(r'^change_pwd_action$', views.change_pwd_action),  # 修改密码处理
 
 ]
