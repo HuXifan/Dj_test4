@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>url反向解析</title>
+</head>
+<body>
+index链接：
+<a href="/index">首页</a> <br>
+/show_args/1/2: <br>
+<a href="/show_args/1/2">show_args/1/2</a>
+
+url反向解析生成index链接： <br>
+
+{#<a href="index">首页</a>#}
+{#<a href="{% url 'booktest:index' %}">首页</a>#}
+使用一个标签 叫 url，里面
+
+动态产生/show/args/1/2 <br>
+{#<a href="{% url 'booktest' %}">/show/args/1/2 </a>#}
+
+{##}
+{#在模板文件中使用时，格式如下:#}
+{#{% url 'namespace名字：name' %} 例如{% url 'booktest:fan2'%}#}
+{#带位置参数：#}
+{#{% url 'namespace名字：name' 参数 %} 例如{% url 'booktest:fan2' 1%}#}
+{#带关键字参数：#}
+{#{% url 'namespace名字：name' 关键字参数 %} 例如{% url 'booktest:fan2' id=1 %}#}
+</body>
+</html>
